@@ -1,0 +1,168 @@
+<html>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!DOCTYPE html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  
+
+<link href='https://fonts.googleapis.com/css?family=Londrina Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: url("http://i.imgur.com/tp3AcIK.jpg");
+  background-size: cover;
+
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 40px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 130px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("http://i.imgur.com/YZiF6cv.jpg");
+}
+.pen{
+  background-image: url("http://i.imgur.com/jfuBilL.jpg");
+}
+.second{
+  background-image: url("http://i.imgur.com/7aEZf14.jpg");
+}
+
+.dessert{
+  background-image: url("http://i.imgur.com/QTLS7pL.jpg");
+}
+.oled
+{
+ background-image: url("http://i.imgur.com/cFigsuR.jpg?1");
+}
+button
+{
+  margin-left:500px;
+  background:-webkit-linear-gradient(bottom, rgba(155,100,255,.4), rgba(120,200,400,.4));
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+
+}
+
+
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Electronics Gadgets</h1>
+<h2>Shop From Here</h2>
+<div class="first">
+  <p>Digital Watch <span class="price">2000 Rs.</span><br />
+  <small>A digital clock is a type of clock that displays the time digitally as opposed to an analog clock, where the time is indicated by the positions of rotating hands. </small></p>
+</div><br>
+<button>Buy Now</button>
+
+<div class="second">
+  <p>Cicret Bracelet <span class="price">2828 Rs.</span><br />
+  <small>Cicret brings the concept of wearable tech to a new level, projecting information from your phone directly onto your skin.</small></p>
+</div>
+<br>
+<button>Buy Now</button>
+
+<div class="dessert">
+  <p>Led USB <span class="price">1348 Rs.</span><br />
+  <small>This is a flexible USB white light that easily plugs into your computer or laptop or even a power banks USB port and provides ample light for reading books.</small></p>
+</div><br>
+<button>Buy Now</button>
+<div class="pen">
+  <p>Spy Pen <span class="price">499 Rs.</span><br />
+  <small>Pen camera India is perfect spy gadget which offer hi-resolution video and audio quality. Plac your order today for advance pen camera on the attractive price.</small></p>
+</div>
+<br>
+  <button>Buy Now</button>
+<div class="oled">
+  <p>OLED<span class="price">36499 Rs.</span><br />
+  <small>OLED (Organic Light Emitting Diodes) is a flat light emitting technology, made by placing a series of organic thin films between two conductors. When electrical current is applied, a bright light is emitted. OLEDs can be used to make displays and lighting.</small></p>
+</div>
+<br>
+  <button>Buy Now</button>
+<script>
+  $('div').hover('click', function() {
+      $(this).toggleClass('show-description');
+  });
+  $("button").on('click', function() {
+      alert("Thnx For buying..Visit Again");
+  });
+</script>
+
+</body>
+</html>
